@@ -1,0 +1,6 @@
+[submodule "microservices/rules-eligibility"]
+	path = microservices/rules-eligibility
+	url = https://github.com/fabriciolfj/app-rules-eligibility-vehicle-payment.git
+[submodule "microservices/rules-financial"]
+	path = microservices/rules-financial
+	url = https://github.com/fabriciolfj/app-rules-financial-vehicle-payment.git
