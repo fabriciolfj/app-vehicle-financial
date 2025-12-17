@@ -5,6 +5,7 @@ services:
     image: mysql:8.0
     ports:
       - "3306:3306"
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: eligibility
@@ -50,6 +51,16 @@ services:
     container_name: "redis"
     ports:
       - 6379:6379
+
+  mockserver:
+    image: mockserver/mockserver:latest
+    ports:
+      - "9001:1080"
+    environment:
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /mocks/*.json
+      MOCKSERVER_WATCH_INITIALIZATION_JSON: 'true'
+    volumes:
+      - ./mock:/mocks:ro
 
 networks:
   kafka-net:

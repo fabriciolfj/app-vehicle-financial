@@ -1,0 +1,20 @@
+{
+  "httpRequest": {
+    "method": "GET",
+    "path": "/api/v1/contracts/12345678900"
+  },
+  "httpResponse": {
+    "statusCode": 200,
+    "headers": {
+      "Content-Type": ["application/json"]
+    },
+    "body": {
+      "id": "03030",
+      "contract": "03030",
+      "value": 2500.50,
+      "installment" : 40,
+      "entry_value": 10000,
+      "vehicle_value" : 34000
+    }
+  }
+}
